@@ -50,7 +50,7 @@ for zh, ko in base_dict.items():
 def index():
     return render_template('index.html')
 
-@app.route('/ask.html', methods=['GET', 'POST'])
+@app.route('/ask', methods=['GET', 'POST'])
 def ask():
     if request.method == 'POST':
         # 讀取學生的問題
